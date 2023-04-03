@@ -1,0 +1,306 @@
+* {
+    
+    color:blanchedalmond;
+    /*border: 2px solid beige;*/
+}
+
+body {
+    background-color: black;
+}
+
+header{
+    background-color: gray;
+    opacity: 0.75; 
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid beige;
+    
+
+
+}
+
+.logo {
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo img {
+    height: 30px;
+    width: 25px;
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+#g ,#t {
+    color: limegreen;
+    font-size: 1.5em;
+}
+
+ a.nav {
+    font-size: 1.75rem;
+    margin: 15px;
+ }
+
+a:hover {
+    color: white;
+}
+
+.mision-h2 {
+    text-align: center;
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+.mision {
+    width: 0 auto;
+    max-width: 1600px;
+    display: grid; 
+    grid-template-areas: 'm1 m1 m4'
+                          'm2 m2 m2'
+                          'm5 m5 m5'
+                          'm3 m3 m3';
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:2fr 1fr 1fr fr;
+    margin-left: 1.5rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    
+
+}
+
+.m1 {
+    grid-area: m1;
+    margin-right: 10px;
+}
+
+.m2 {
+    grid-area: m2;
+    border-top: 2px solid blanchedalmond;
+}
+
+.m3 {
+    grid-area: m3;
+}
+
+
+.m4 {
+    grid-area: m4;
+    height: 250px;
+}
+
+.m5 {
+    grid-area: m5;
+    min-width: 200px;
+    width: 70%;
+    height: 200px;
+    align-self: center;
+    justify-self: center;
+    border: 2px solid limegreen;
+}
+
+.container {
+    max-width: 1600px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .item {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    
+  }
+
+  .image-link {
+    position: relative;
+    display: inline-block;
+  }
+
+  a .h3 {
+    text-decoration: none;
+    font-size: 1.5em;
+  }
+
+  
+
+  .image-link .solarpanel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    border: 4px solid limegreen;
+    border-radius: 5%;
+    background-color: rgb(1, 1, 36);
+    font-size: 1.5rem;
+    overflow: scroll;
+  }
+  
+  .image-link:hover .solarpanel {
+    opacity: 1;
+  }
+
+  .image-link .lights {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    border: 4px solid limegreen;
+    border-radius: 5%;
+    background-color: rgb(1, 1, 36);
+    font-size: 1.5rem;
+    overflow: scroll;
+  }
+  
+  .image-link:hover .lights {
+    opacity: 1;
+  }
+
+  .image-link .smart {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    border: 4px solid limegreen;
+    border-radius: 5%;
+    background-color: rgb(1, 1, 36);
+    font-size: 1.5rem;
+    overflow: scroll;
+  }
+  
+  .image-link:hover .smart {
+    opacity: 1;
+  }
+  
+  .image-link:hover img {
+    opacity: 0;
+  }
+  
+  .item img {
+    width: 100%;
+    border: 4px solid limegreen;
+    
+  }
+  
+  .item h3 {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+  }
+
+
+  .team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+  }
+  
+  .members {
+    width: 200px;
+    height: 250px;
+    display: flex;
+    align-items:center;
+    justify-content:end;
+    flex-direction: column;
+  }
+  
+  .members h3 {
+    font-size: 1.5rem;
+    
+  }
+  
+  .members h4 {
+    margin-top: -25px;
+    font-size: 1rem;
+    color: #999;
+  }
+
+  .members h3, h4 {
+    background-color: black;
+    width: 100%;
+    opacity: .75;
+  }
+
+  #elon {
+    background-image: url("https://www.businessinsider.in/thumb/msid-61378067,width-700,resizemode-4,imgsize-76080/How-Elon-Musk-Jeff-Bezos-and-19-other-famous-CEOs-are-doing-according-to-their-employees.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #megan {
+    background-image: url("https://i.insider.com/5f6ccec90f4d550011032220?width=700");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #will {
+    background-image: url("https://i.guim.co.uk/img/media/748e201960d9d6fe2dac9c60e3ab9f7023d77101/0_487_4588_2751/master/4588.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=b13d72395ee636801bc71acadcbc8262");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #ryan {
+    background-image: url("https://images.wsj.net/im-419939?width=1920&height=2169");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+
+
+.mision {
+    grid-template-areas: 
+    'm1'
+    'm4'
+    'm2'
+    'm5'
+    'm3';
+    grid-template-columns: 1fr;
+    margin: 0 10%;
+    
+}
+  
+.m4 {
+    margin: 0 auto;
+}
+.m2 {
+    border-top: none;
+}
+}
+
+/*Tablet*/ 
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .m4 {
+        min-height: 350px;
+        max-height: 450px;
+    }
+}
+
+/* Desktop devices */
+
+@media only screen and (min-width: 1024px) {
+
+}
